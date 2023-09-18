@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital,wght@0,400;0,500;0,600;1,500;1,800&family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,300&family=REM&family=Roboto+Mono&family=Roboto:ital,wght@0,400;0,500;1,300;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #fff;
+    height: 4000px;
+}
+.container {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.top {
+    width: 90%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brand {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 25px;
+    font-weight: bold;
+    color: #800080;
+    letter-spacing: 2px;
+}
+.filterbuttons{
+    width: 50%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 25px;
+    cursor: pointer;
+}
+.edit_buttons {
+    background: none;
+    border: none; 
+    font-size: 18px;
+    cursor: pointer;
+}
+.edit_buttons:hover {
+    color: blueviolet;
+}
+.filtersearch {
+    width:20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 18px;
+}
+.login {
+    border: 3px solid #eee;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.manage_root{
+    width: 90%;
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.filterCards { 
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 25px;
+    transition: grid-template-columns 0.5s ease-in-out;
+}
+.box {
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+}
+.box-img {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-image {
+    max-width: 90%;
+    max-height: 90%;
+}
+.bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottom2 {
+    margin-top: 20px;
+    box-shadow: 0px 0px 3px #eee;
+}
+.edit_solid {
+    width: 100%;
+    padding: 10px;
+    letter-spacing: 5px;
+}
+.cell1 {
+    color: #0000FF;
+}
+.cell2{
+    color: #800080;
+}
+.cell3{ 
+    color: #FF00FF;
+}
+.edit_button {
+    margin-top: 6px; 
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+}
+.button_first {
+    width: 120px;
+    height: 40px;
+    background-color: #FF00FF;
+    border: none;
+    color: #fff;
+}
+.button_second {
+    width: 120px;
+    height: 37px;
+    background-color: #0000FF;
+    border: none;
+    color: #fff;
+}
+@media (max-width: 768px) {
+    .manage_root {
+      width: 100%;
+    }
+    .filterCards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .filterCards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 576px) {
+    body {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 768px) {
+    .filterCards {
+      grid-template-columns: repeat(2, 1fr);
+      transition: grid-template-columns 0.5s ease-in-out;
+    }
+  }
+  @media (max-width: 576px) {
+    .manage_root {
+      width: 100%;
+    }
+  
+    .filterCards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+.container2 {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header {
+    width: 90%;
+    background-color: aquamarine;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px #eee;
+}
+.header h2 {
+    margin-left: 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+.edit_icon {
+    margin-right: 20px;
+    background-color: #fff;
+    width: 90px;
+    height: 50px; 
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.edit_icon .fa-solid { 
+    margin-left: 10px;
+    font-size: 20px;
+}
+.edit_count { 
+    margin-right: 10px;
+    background-color: aquamarine;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 50%;
+}
+.count {
+    font-size: 25px; 
+    color: #fff;
+}
+.filtercard { 
+    margin-top: 20px;  
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    width: 90%;
+}
+.root {
+    width: 60%; 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px ;
+    /* border: 1px solid; */
+    padding: 5px;
+}
+.filteritem {
+    width: 40%;
+    margin-left: 40px;
+    /* border: 1px solid ;  */
+    padding: 5px;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+    box-shadow: 0px 0px 3px #eee;
+    
+}
+.m_card {
+    background-color: aquamarine;
+    width: 100%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px aquamarine;
+}
+.m_card p{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+.emp_ty {
+    margin-bottom: 5px; 
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.add_product {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid aquamarine;
+    box-shadow: 0px 0px 3px #eee;
+    padding: 5px;
+    border-radius: 5px;
+}
+.sum_price { 
+    color: red;
+}
+.box2 {
+    width: 100%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px #eee;
+    padding: 5px;
+}
+.box2-img {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;  
+    justify-content: center;
+}
+.box2-image {
+    max-width: 90%; 
+    max-height: 90%;
+}
+.box2_bottom2 {
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.button2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    background-color: aquamarine;
+    border: aquamarine;
+    height: 30px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+} 
+.button2:hover {
+    color: red;
+    transition: 0.5s;
+}
+.sel_box2 {
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px #eee;
+    padding: 5px;
+    border-radius: 5px;
+}
+.sel_img {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sel_image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 50%;
+}
+.sel_bottom { 
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.fa-solid1 {
+    cursor: pointer;
+}
+.fa-solid1:hover {
+    color: red;
+}
+/* Use fluid units for the width of the main content area. */
+.main-content {
+    width: 80vw;
+  }
+  
+  /* Use flexbox to layout the header section of the page. */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Use media queries to hide the navigation menu on small screens. */
+  @media (max-width: 768px) {
+    .navigation {
+      display: none;
+    }
+  }
+  
